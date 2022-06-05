@@ -1,5 +1,6 @@
 # Cantate Domino website
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3805d743-d2ea-4c31-8450-5d1104f06a80/deploy-status)](https://app.netlify.com/sites/cantatedomino/deploys)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a0f27a4e-cef3-49ee-a6a1-d2ea4aa1b525/deploy-status)](https://app.netlify.com/sites/steady-boba-faaf8a/deploys)
 
 Website voor Cantate Domino
 
@@ -12,7 +13,7 @@ bundle exec jekyll serve
 ## Build for production
 
 ```bash
-JEKYLL_ENV=production 
+JEKYLL_ENV=production
 bundle exec jekyll build
 ```
 
