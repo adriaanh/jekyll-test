@@ -5,7 +5,8 @@ date: 2022-06-05T19:09:35.244Z
 youtubeId: REhPGYbeSc4
 image:
   href: /assets/uploads/dji_0665-1.jpg
-  show-image-page: true
+  show-image-page: false
+  show-image-news: false
 attachment:
   filename: Download
 ---
