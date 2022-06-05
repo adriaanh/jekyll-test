@@ -27,8 +27,8 @@
       {% if post.image.show-image-news %}
 	  {% if post.image.href %}<span class="image main"><img src="{{ post.image.href }}" alt="" /></span>{% endif %}
       {% endif %}
-	  {% if post.date %}<p>{{ post.date | date_to_string }}</p>{% endif %}
-	  <p>{{ post.content }}</p>
+	  {% if post.date %}<i>{{ post.date | date_to_string }}</i><br />{% endif %}
+	  {{ post.content }}
 	  {% endif %}
     {% endfor %}
 	</div>
