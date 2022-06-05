@@ -14,15 +14,25 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - { label: "Title", name: "title", widget: "string"}
-      - { label: "Publish Date", name: "date", widget: "datetime", required: false}
-      - { label: "Image", name: "image", widget: "image", required: false}
-      - { label: "Show image on post page", name: "show-image-page", widget: "boolean", default: true }
-      - { label: "Show image on news page", name: "show-image-news", widget: "boolean",  default: true }
+      - { label: "Publish Date", name: "date", widget: "datetime"}
+      - label: "Image"
+        name: "image"
+        widget: "object"
+        required: false
+        collapsed: true
+        fields: 
+          - { label: "Image", name: "href", widget: "image", required: false}
+          - { label: "Show on post page", name: "show-image-page", widget: "boolean", required: false }
+          - { label: "Show on news page", name: "show-image-news", widget: "boolean",  required: false }
+      # - { label: "Image", name: "image", widget: "image", required: false}
+      # - { label: "Show image on post page", name: "show-image-page", widget: "boolean", default: true }
+      # - { label: "Show image on news page", name: "show-image-news", widget: "boolean",  default: true }
       - { label: "Youtube ID", name: "youtubeId", widget: "string", required: false}
       - label: "Attachment"
         name: "attachment"
         widget: "object"
         required: false
+        collapsed: true
         fields: 
           - { label: "File", name: "file", widget: "file", required: false}
           - { label: "Button title", name: "filename", widget: "string", default: "Download", required: false}
@@ -36,7 +46,7 @@ collections:
         name: 'koor'
         file: 'koor.md'
         fields:
-            - { label: 'Title', name: 'title', widget: 'hidden', default: 'Generic' }
+            - { label: 'Title', name: 'title', widget: 'hidden', default: 'Koor' }
             - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
             - { label: 'Description', name: 'description', widget: 'string' }
             - { label: "Image", name: "image", widget: "image", required: false}
@@ -47,7 +57,7 @@ collections:
         name: 'dirigent'
         file: 'dirigent.md'
         fields:
-            - { label: 'Title', name: 'title', widget: 'hidden', default: 'Generic' }
+            - { label: 'Title', name: 'title', widget: 'hidden', default: 'Dirigent' }
             - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
             - { label: 'Description', name: 'description', widget: 'string' }
             - { label: "Image", name: "image", widget: "image", required: false}
@@ -58,7 +68,7 @@ collections:
         name: 'repertoire'
         file: 'repertoire.md'
         fields:
-            - { label: 'Title', name: 'title', widget: 'hidden', default: 'Generic' }
+            - { label: 'Title', name: 'title', widget: 'hidden', default: 'Repertoire' }
             - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
             - { label: 'Description', name: 'description', widget: 'string' }
             - { label: "Image", name: "image", widget: "image", required: false}
