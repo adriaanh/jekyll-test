@@ -15,6 +15,7 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Publish Date", name: "date", widget: "datetime"}
+      - { label: "Youtube ID", name: "youtubeId", widget: "string", required: false}
       - label: "Image"
         name: "image"
         widget: "object"
@@ -24,10 +25,6 @@ collections:
           - { label: "Image", name: "href", widget: "image", required: false}
           - { label: "Show on post page", name: "show-image-page", widget: "boolean", required: false }
           - { label: "Show on news page", name: "show-image-news", widget: "boolean",  required: false }
-      # - { label: "Image", name: "image", widget: "image", required: false}
-      # - { label: "Show image on post page", name: "show-image-page", widget: "boolean", default: true }
-      # - { label: "Show image on news page", name: "show-image-news", widget: "boolean",  default: true }
-      - { label: "Youtube ID", name: "youtubeId", widget: "string", required: false}
       - label: "Attachment"
         name: "attachment"
         widget: "object"
